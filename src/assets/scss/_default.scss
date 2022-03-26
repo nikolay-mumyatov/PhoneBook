@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  padding: 0 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include _576 {
+    padding: 0 3rem;
+  }
+
+  @include _768 {
+    max-width: 72rem;
+    padding: 0;
+  }
+
+  @include _992 {
+    max-width: 96rem;
+  }
+
+  @include _1200 {
+    max-width: 114rem;
+  }
+
+  @include _1920 {
+    max-width: 128rem;
+  }
+}
