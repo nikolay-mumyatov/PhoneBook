@@ -42,7 +42,7 @@
       font-size: 1.8rem;
     }
 
-    div {
+    &-item {
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -62,8 +62,9 @@
 
     &-date {}
 
-    &-phone {}
-
-    &-email {}
+    &-phone,
+    &-email {
+      display: block;
+    }
   }
 }
