@@ -16,7 +16,7 @@
 
   &__btn {
     padding: 0.8rem 1rem;
-    border: 0.1rem solid rgb(135, 135, 135);
+    border: 0.1rem solid #878787;
     border-radius: 2rem;
     font-weight: 500;
     font-size: 1.2rem;
@@ -29,6 +29,15 @@
     @include _992 {
       padding: 1rem 3rem;
       font-size: 1.6rem;
+    }
+
+    &:hover{
+      opacity: 0.9;
+    }
+
+    &:active{
+      background: #2880c8;
+      opacity: 1;
     }
   }
 }

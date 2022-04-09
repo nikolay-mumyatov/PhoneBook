@@ -1,0 +1,69 @@
+.person {
+  padding-top: 5rem;
+
+  &__card {
+    padding: 3rem 1.5rem;
+    max-width: 54rem;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+      0px 8px 10px 1px rgb(0 0 0 / 15%),
+      0px 3px 14px 2px rgb(0 0 0 / 10%);
+    border-radius: 0.4rem;
+  }
+
+  &__img {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 15rem;
+    height: 15rem;
+
+    @include _576 {
+      width: 18rem;
+      height: 18rem;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5%;
+    }
+  }
+
+  &__info {
+    font-size: 1.6rem;
+
+    @include _1200 {
+      font-size: 1.8rem;
+    }
+
+    div {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      span {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        color: #737373;
+
+        @include _1200 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &-name {}
+
+    &-date {}
+
+    &-phone {}
+
+    &-email {}
+  }
+}

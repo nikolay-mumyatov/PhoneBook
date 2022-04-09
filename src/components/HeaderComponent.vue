@@ -9,7 +9,7 @@
             class="header__logo"
           />
         </router-link>
-        <button class="header__btn">Добавить cотрудника</button>
+        <router-link to="/" class="header__btn">Все сотрудники</router-link>
       </div>
     </div>
   </header>

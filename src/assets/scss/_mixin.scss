@@ -33,6 +33,11 @@
         @content;
     }
 }
+@mixin _360{
+    @media (min-width: 360px){
+        @content;
+    }
+}
 
 @mixin transition{
     -webkit-transition: all  ease-in-out 0.3s;
